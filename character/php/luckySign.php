@@ -202,7 +202,7 @@ function getLanguages($intMod, $luckMod, $luckySign)
 
         if($intMod > 0)
         {
-                $bonusLanguages += $intMod;
+                $bonusLanguages += ($intMod * 2);
         }
 
         if($luckySign == 28 && $luckMod > 0)

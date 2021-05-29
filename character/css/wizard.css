@@ -152,6 +152,27 @@ body{
 	font-size: 0.4em;
 }
 
+#familiarForm{
+    position:absolute;
+    top: 750px;
+    left: 390px;
+    font-size: 0.65em;
+    width: 250px;
+}
+
+
+#knownSpells{
+    position:absolute;
+    top: 644px;
+    left: 515px;
+}
+
+#maxSpellLevel{
+    position:absolute;
+    top: 676px;
+    left: 515px;
+}
+
 
 #gearList{
     position:absolute;
@@ -441,17 +462,17 @@ body{
     font-size: 0.9em;
 }
 
-#threatRange{
+#spellCheck{
     position:absolute;
     top: 243px;
-    left: 570px;
+    left: 590px;
     font-size: 0.9em;
 }
 
 #attackBonus{
     position:absolute;
     top: 243px;
-    left: 415px;
+    left: 430px;
     font-size: 0.9em;
 }
 
@@ -520,94 +541,3 @@ body{
 	font-size: 0.5em;
 }
 
-
-#backstab{
-    position:absolute;
-    top: 686px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#sneakSilently{
-    position:absolute;
-    top: 716px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#hideInShadows{
-    position:absolute;
-    top: 746px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#pickPocket{
-    position:absolute;
-    top: 776px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#climb{
-    position:absolute;
-    top: 806px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#pickLock{
-    position:absolute;
-    top: 836px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#findTrap{
-    position:absolute;
-    top: 866px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#disableTrap{
-    position:absolute;
-    top: 896px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#forgeDoc{
-    position:absolute;
-    top: 926px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#disguiseSelf{
-    position:absolute;
-    top: 956px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#readLanguages{
-    position:absolute;
-    top: 986px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#handlePoison{
-    position:absolute;
-    top: 1016px;
-    left: 505px;
-    font-size: 0.8em;
-}
-
-#castSpellScroll{
-    position:absolute;
-    top: 1055px;
-    left: 505px;
-    font-size: 0.8em;
-}

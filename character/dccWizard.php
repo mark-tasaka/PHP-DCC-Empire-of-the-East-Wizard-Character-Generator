@@ -158,7 +158,6 @@
        $title = title($level, $alignment);
 
        $initiative = getInit($agilityMod, $luckMod, $luckySign[0]);
-       $initiative += $level; 
 
        $languages = getLanguages($intelligenceMod, $luckMod, $luckySign[0]);
 
@@ -177,7 +176,6 @@
        $meleeHitLuckyBonus = meleeAttackLuckSign($luckMod, $luckySign[0]);
 
        $meleeToHit = $attackBonus + $meleeHitLuckyBonus + $strengthMod;
-       //$meleeToHit =$meleeHitLuckyBonus + $strengthMod;
 
        $meleeDamageLuckyBonus = meleeDamageLuckSign($luckMod, $luckySign[0]);
 
@@ -187,7 +185,6 @@
         $missileHitLuckyBonus = missileAttackLuckSign($luckMod, $luckySign[0]);
 
         $missileToHit = $attackBonus + $missileHitLuckyBonus + $agilityMod;
-       // $missileToHit = $missileHitLuckyBonus + $agilityMod;
 
         $missileDamageLuckyBonus = missileDamageLuckSign($luckMod, $luckySign[0]);
 
@@ -218,6 +215,9 @@
 
        }
 
+    
+       $knownSpells = knownSpells($level);
+       $maxSpellLevel = maxSpellLevel($level);
 
 
 $familiarForm = array();
@@ -459,6 +459,18 @@ else
        </span>
        
        
+       <span id="knownSpells">
+           <?php
+           echo $knownSpells;
+           ?>
+       </span>
+       
+       <span id="maxSpellLevel">
+           <?php
+           echo $maxSpellLevel;
+           ?>
+       </span>
+       
        
        <span id="class">Wizard</span>
        
@@ -551,7 +563,7 @@ else
         
         <span id="attackBonus">
         <?php
-               // $attackBonus = getModSign($attackBonus);
+                $attackBonus = getModSign($attackBonus);
                 echo $attackBonus;
            ?>
            </span>
@@ -572,7 +584,7 @@ else
             ?>
         </span>
         
-        <span id="threatRange">
+        <span id="spellCheck">
             <?php
                 $spellCheck = getModSign($spellCheck);
                 echo $spellCheck;
