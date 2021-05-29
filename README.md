@@ -4,6 +4,12 @@ The Dungeon Crawl Classics (DCC) Empire of the East Wizard Character Generator g
 
 -------------
 
+
+Update 1.01: 2021-06-29
+
+Updates to dccWizard.php, wizard.css nad luckySign.php.  New character sheet (wizard.png) added.
+
+
 Initial Commit: 2021-06-28
 
 The initial commit for the Wizard Character Generator.
